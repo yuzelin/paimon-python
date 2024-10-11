@@ -33,7 +33,7 @@ jobs:
           chmod +x dev/build-wheels.sh
           ./dev/build-wheels.sh
       - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: 'wheel_$(Agent.OS)_$(Agent.JobName)'
           path: '/dist'
@@ -47,7 +47,7 @@ jobs:
           chmod +x dev/build-wheels.sh
           ./dev/build-wheels.sh
       - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: 'wheel_$(Agent.OS)_$(Agent.JobName)'
           path: '/dist'
